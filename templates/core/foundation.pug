@@ -1,0 +1,26 @@
+block config
+	- var page_title = 'Hyperdrive: Solari'
+
+doctype html
+html(lang="en")
+	head
+		title #{page_title}
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		link(rel='icon', type='image/gif', href='dist/images/favicon.png')
+		meta(name='description', content='')
+
+		link(rel="stylesheet", href="dist/css/main.css")
+	body.home-page
+		//- _Header :::::::::::
+		include ../core/header
+
+		//- _Main :::::::::::
+		main
+			block main
+
+		//- _Footer :::::::::::
+		include ../core/footer
+		script(src='dist/js/jquery.js')
+		script(src='dist/js/main.js')

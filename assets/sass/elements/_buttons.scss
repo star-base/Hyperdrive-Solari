@@ -1,0 +1,21 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-radius: 3px;
+	background: #e11f26;
+	color: $white;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: .6em 1em .4em;
+
+	&:hover {
+		border-color: #e4e4e4;
+	}
+
+	&:active,
+	&:focus {
+		border-color: #e4e4e4;
+	}
+}

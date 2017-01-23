@@ -1,0 +1,19 @@
+{
+	"dependencies": {
+		"main.js": {
+			"files": [
+				"js/main.js"
+			],
+			"main": true
+		},
+		"main.css": {
+			"files": [
+				"sass/main.scss"
+			],
+			"main": true
+		}
+	},
+	"config": {
+		"devUrl": "http://yoursite.dev"
+	}
+}

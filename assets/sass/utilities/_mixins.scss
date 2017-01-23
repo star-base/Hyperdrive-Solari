@@ -1,0 +1,71 @@
+// Rem output with px fallback
+@mixin font_size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center_block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix_after() {
+	clear: both;
+}
+
+
+//  Vertical Align
+@mixin vertical_align($align:relative, $top:50%) {
+	position: $align;
+	top: $top;
+	@include transform(translateY(-50%));
+}
+
+//  Background Image
+@mixin background ($folder:images, $img:file, $type:png, $repeat:no-repeat, $x:0, $y:0, $size:none) {
+	background-image: url(../#{$folder}/#{$img}.#{$type});
+	background-repeat: #{$repeat};
+	background-position: #{$x} #{$y};
+
+	@if $size != 'none' {
+		background-size: $size;
+	}
+}
+
+// Vendore Prefix
+@mixin vendor_prefix($name, $argument) {
+	-webkit-#{$name}: #{$argument};
+	-ms-#{$name}: #{$argument};
+	-moz-#{$name}: #{$argument};
+	-o-#{$name}: #{$argument};
+	#{$name}: #{$argument};
+}
+
+// Gradient Border
+@mixin gradient_border($color01:#000000, $color02:#ffffff, $direction:right) {
+	-webkit-border-image: -webkit-gradient(linear, 100% 0, 0 0, from(#{$color01}), to(#{$color02})) 1 100%;
+	-webkit-border-image: -webkit-linear-gradient(#{$direction}, #{$color01}, #{$color02}) 1 100%;
+	-moz-border-image: -moz-linear-gradient(#{$direction}, #{$color01}, #{$color02}) 1 100%;
+	-o-border-image: -o-linear-gradient(#{$direction}, #{$color01}, #{$color02}) 1 100%;
+	border-image: linear-gradient(to #{$direction}, #{$color01}, #{$color02}) 1 100%;
+	border-image-slice: 1;
+}
+
+//  Multiple Neat Breakpoints
+@mixin multiple_media($media...) {
+	@each $query in $media {
+		@include media($query) {
+			@content
+		}
+	}
+}

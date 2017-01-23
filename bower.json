@@ -1,0 +1,42 @@
+{
+  "name": "hyperdrive-solari",
+  "version": "1.0.0",
+  "homepage": "http://brettbash.com",
+  "authors": [
+    "Brett Bash <brettbash@brettbash.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "animatewithsass": "~3.2.1",
+    "bourbon": "~4.2.7",
+    "font-awesome": "4.7",
+    "gsap": "~1.19.1",
+    "jquery": "~1.11.0",
+    "neat": "~1.8.0",
+    "normalize.scss": "^6.0.0",
+    "scrollmagic": "~2.0.5",
+    "vide": "^0.5.1"
+  },
+  "overrides": {
+	  	"font-awesome": {
+			"main": [
+				"./scss/font-awesome.scss",
+				"./fonts/*"
+			]
+		},
+	  	"gsap": {
+			"main": [
+				"./src/uncompressed/TweenMax.js",
+				"./src/uncompressed/TweenLite.js"
+			]
+		},
+		"scrollmagic": {
+			"main": [
+				"./scrollmagic/uncompressed/ScrollMagic.js",
+				"./scrollmagic/uncompressed/plugins/animation.gsap.js",
+				"./scrollmagic/uncompressed/plugins/debug.addIndicators.js"
+			]
+		}
+	}
+}

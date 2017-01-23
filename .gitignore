@@ -1,0 +1,16 @@
+bower_components/
+node_modules/
+dist/
+.idea/
+.sass-cache
+.htaccess
+compass_app_log.txt
+*.log
+.DS_Store
+.AppleDouble
+.LSOverride
+Local
+*.sublime-project
+*.sublime-workspace
+sftp-config.json
+.html

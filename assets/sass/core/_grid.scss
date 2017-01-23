@@ -1,0 +1,17 @@
+%container {
+	position: relative;
+	@include outer-container(90%);
+	width: 90%;
+	display: block;
+	z-index: 1;
+
+	@include media($desktop_sm) {
+		@include outer-container($clover); // 960px
+		width: $clover;
+	}
+
+	@include media($desktop_lg) {
+		@include outer-container($kaiju - 40px); // 1320px
+		width: $kaiju - 40px;
+	}
+}

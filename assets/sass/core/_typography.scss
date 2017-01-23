@@ -1,0 +1,77 @@
+body,
+button,
+input,
+select,
+textarea {
+	color: #222628;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #222628;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: monospace;
+	@include font-size(0.9375);
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #e4e4e4;
+	cursor: help;
+}
+
+mark, ins {
+	background: #222628;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
+a {
+	color: #222628;
+	@include transition(all 0.3s);
+
+	&:visited {
+		color: #222628;
+	}
+	
+	&:hover,
+	&:focus,
+	&:active {
+		color: #e11f26;
+		outline: 0;
+	}
+}
