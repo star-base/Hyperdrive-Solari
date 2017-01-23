@@ -7,7 +7,7 @@
 // Shades
 $white: #ffffff;
 
-/* CORE STRUCTURE 
+/* CORE STRUCTURE
 ---------------------------------- */
 // Neat
 $disable-warnings: true;
@@ -20,7 +20,7 @@ $main_pad: 2.1875%;
 $fat_pad: 6.375%;
 
 
-/* BASE SIZES 
+/* BASE SIZES
 ---------------------------------- */
 
 // _Mobile
@@ -45,7 +45,7 @@ $cygni: 2300px;
 $scuti: 2500px;
 
 
-/* BOURBON NEAT BREAKPOINTS 
+/* BOURBON NEAT BREAKPOINTS
 ---------------------------------- */
 // _Mobile
 /*
@@ -64,7 +64,7 @@ $scuti: 2500px;
 	:: 840px <    */
 		$mobile_xlg: new-breakpoint(min-width $voltron); /*
 // _Desktop
-/*	
+/*
 	:: 960px <    */
 		$desktop_xsm: new-breakpoint(min-width $clover); /*
 	:: 1000px <    */
@@ -91,10 +91,10 @@ $scuti: 2500px;
 		$andromeda: new-breakpoint(min-width $canis_majoris); /*
 	:: 1740px < + 1110px <    */
 		$milky_way: new-breakpoint(min-width $betelgeuse min-height $gipsy_danger + 110px);
-	
+
 
 // _Short
-/*	
+/*
 	:: 600px <    */
 		$short_xsm: new-breakpoint(min-height $megatron - 60px); /*
 	:: 690px <    */
@@ -106,4 +106,4 @@ $scuti: 2500px;
 	:: 1020px <    */
 		$short_xlg: new-breakpoint(min-height $gipsy_danger + 20px); /*
 	:: 1110px <    */
-		$short_xxlg: new-breakpoint(min-height $gipsy_danger + 110px); /*
+		$short_xxlg: new-breakpoint(min-height $gipsy_danger + 110px);
