@@ -81,17 +81,18 @@ $scuti: 2500px;
 		$desktop_xlg: new-breakpoint(min-width $godzilla); /*
 // _Astronomical
 /*
-	:: 2500px <    */
-		$pinwheel: new-breakpoint(min-width $scuti); /*
-	:: 2300px <    */
-		$blackhole: new-breakpoint(min-width $cygni); /*
-	:: 1920px < + 960px >    */
-		$ursa_major: new-breakpoint(min-width $canis_majoris max-height $clover); /*
+	:: 1740px < + 1110px <    */
+		$milky_way: new-breakpoint(min-width $betelgeuse min-height $gipsy_danger + 110px); /*
+	:: 1800px <    */
+		$desktop_xxlg: new-breakpoint(min-width $betelgeuse + 60px); /*
 	:: 1920px <    */
 		$andromeda: new-breakpoint(min-width $canis_majoris); /*
-	:: 1740px < + 1110px <    */
-		$milky_way: new-breakpoint(min-width $betelgeuse min-height $gipsy_danger + 110px);
-
+	:: 1920px < + 960px >    */
+		$ursa_major: new-breakpoint(min-width $canis_majoris max-height $clover); /*
+	:: 2300px <    */
+		$blackhole: new-breakpoint(min-width $cygni); /*
+	:: 2500px <    */
+		$pinwheel: new-breakpoint(min-width $scuti); /*
 
 // _Short
 /*

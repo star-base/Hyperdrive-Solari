@@ -14,4 +14,9 @@
 		@include outer-container($kaiju - 40px); // 1320px
 		width: $kaiju - 40px;
 	}
+
+	@include media($desktop_xxlg) {
+		@include outer-container($betelgeuse); // 1740px
+		width: $betelgeuse;
+	}
 }
