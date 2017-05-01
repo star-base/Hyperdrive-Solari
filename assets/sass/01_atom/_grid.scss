@@ -20,3 +20,24 @@
 		width: $betelgeuse;
 	}
 }
+
+%container_flex {
+	position: relative;
+	display: flex;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	z-index: 1;
+
+	@include media($desktop_sm) {
+		width: $clover;
+	}
+
+	@include media($desktop_lg) {
+		width: $kaiju - 40px;
+	}
+
+	@include media($desktop_xxlg) {
+		width: $betelgeuse;
+	}
+}

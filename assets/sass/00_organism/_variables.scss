@@ -1,0 +1,81 @@
+/* COLORS
+---------------------------------- */
+
+/* Primary Colors */
+// Example: $arrakis: #e8993c;
+
+// Shades
+$white: #ffffff;
+
+/* CORE STRUCTURE
+---------------------------------- */
+// Neat
+$disable-warnings: true;
+
+// _Padding
+$main_padding: 20px;
+$fat_padding: 35px;
+$content_padding: 80px;
+$main_pad: 2.35765;
+$fat_pad: 6.375%;
+
+
+/* BASE SIZES
+---------------------------------- */
+
+// _Mobile
+$facehugger: 0;
+$xenomorph: 420px;
+$optimus_prime: 576px;
+$megatron: 660px;
+$millenniumfalcon: 720px;
+$voltron: 840px;
+
+// _Desktop
+$clover: 960px;
+$gipsy_danger: 1000px;
+$king_ghidorah: 1200px;
+$kaiju: 1370px;
+$godzilla: 1570px;
+
+// _Astronomical
+$betelgeuse: 1740px;
+$canis_majoris: 1920px;
+$cygni: 2300px;
+$scuti: 2500px;
+
+
+/* BREAKPOINTS
+---------------------------------- */
+$breakpoints: (
+	// _Mobile
+	'mobile_xsm'    : 375px,
+	'mobile_sm'     : 420px,
+	'mobile_mds'    : 450px,
+	'mobile_md'     : 576px,
+	'mobile_mdlg'   : 660px,
+	'mobile_lg'     : 720px,
+	'mobile_lgm'    : 800px,
+	'mobile_xlg'    : 840px,
+	// _Desktop
+	'desktop_xsm'   : 960px,
+	'desktop_sm'    : 1000px,
+	'desktop_mds'   : 1100px,
+	'desktop_md'    : 1200px,
+	'desktop_mdlg'  : 1280px,
+	'desktop_lg'    : 1370px,
+	'desktop_xlg'   : 1570px,
+	// _Large Screens
+	'mega'          : 1740px,
+	'mega_md'       : 1800px,
+	'mega_lg'       : 1920px,
+	'mega_xl'       : 2300px,
+	'mega_xxl'      : 2500px,
+	// _Short Screens
+	'short_xsm'     : 600px,
+	'short_sm'      : 690px,
+	'short_md'      : 820px,
+	'short_lg'      : 900px,
+	'short_xlg'     : 1020px,
+	'short_xxlg'    : 1110px
+);

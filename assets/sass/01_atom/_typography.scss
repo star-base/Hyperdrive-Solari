@@ -62,16 +62,16 @@ big {
 
 a {
 	color: #222628;
-	@include transition(all 0.3s);
+	transition: all 0.3s;
 
 	&:visited {
 		color: #222628;
 	}
-	
+
 	&:hover,
 	&:focus,
 	&:active {
-		color: #e11f26;
+		color: inherit;
 		outline: 0;
 	}
 }
